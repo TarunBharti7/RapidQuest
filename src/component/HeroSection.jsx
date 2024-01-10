@@ -29,9 +29,9 @@ const HeroSection = () => {
             </div>
 
             {/* Contributions Overtime */}
-            <div className='pl-7 pt-4'>
+            <div className='px-7 pt-4'>
                 <h1 className='text-base font-bold text-slate-800 mb-4 '>Contributions Overtime</h1>
-                <div className='flex justify-around ml-[-22px]'>
+                <div className='flex justify-between '>
                     <div>
                         <div className='h-2 w-3 rounded-lg bg-indigo-800'></div>
                         <p className='text-slate-500 font-medium pt-1 text-sm'>Employer</p>
