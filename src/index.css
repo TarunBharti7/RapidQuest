@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.circleRating {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    flex-shrink: 0; 
+    border-radius: 50%;
+    padding: 2px; 
+}
+
+@media only screen and (min-width: 768px) {
+    .circleRating {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.circleRating .CircularProgressbar-text {
+    font-size: 10px;
+    font-weight: 700;
+    fill: black;
+}

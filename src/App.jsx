@@ -3,6 +3,7 @@ import HomePage from './component/HomePage'
 import HeroSection from './component/HeroSection'
 import BarChartPage from './component/BarChartPage'
 import { UserData } from './component/Constant'
+import SideBar from './component/SideBar'
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
       <HeroSection />
       <BarChartPage charData={userData} />
 
+      <SideBar/>
     </div >
   )
 }
