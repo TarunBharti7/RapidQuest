@@ -14,7 +14,7 @@ const Compare = () => {
                     <div>
                         <div className='py-1 '>
                             <label className='text-sm font-bold text-slate-700 pr-7'>Age: </label>
-                            <select className='text-sm font-medium text-slate-700' name="" id="age">
+                            <select className='text-sm font-medium text-slate-700 bg-transparent' name="" id="age">
                                 <option value="30">Under 30</option>
                                 <option value="50">Under 50</option>
                             </select>
@@ -23,7 +23,7 @@ const Compare = () => {
 
                         <div className=''>
                             <label className='text-sm font-bold text-slate-700 pr-4'>Salary: </label>
-                            <select className='text-sm font-medium text-slate-700' name="" id="salary">
+                            <select className='text-sm font-medium text-slate-700 bg-transparent' name="" id="salary">
                                 <option value="k">K 20 - K 30</option>
                                 <option value="k">K 40 - K 50</option>
                             </select>
@@ -32,7 +32,7 @@ const Compare = () => {
 
                         <div className='pt-1'>
                             <label className='text-sm font-bold text-slate-700 pr-2'>Gender: </label>
-                            <select className='text-sm font-medium text-slate-700' name="" id="gemder">
+                            <select className='text-sm font-medium text-slate-700 bg-transparent' name="" id="gemder">
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select>
