@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
     return (
-        <div className='mb-52 mt-10'>
+        <div className='mb-8 mt-10'>
             {/* Retirement Section */}
             <div className='pl-7 mb-4'>
                 <p className='font-serif text-xs font-bold text-indigo-700'>Retirement Income</p>

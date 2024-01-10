@@ -24,7 +24,7 @@ const HomePage = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRXOat2wRgu6aCu4dR6nrZ8BKsdQnFWwkPg&usqp=CAU" alt="" 
             />
             <div>
-                <h1 className='font-bold font-serif mt-8 text-1xl text-slate-800'>Hi Mike,</h1>
+                <h1 className='font-bold font-serif mt-8 text-2xl text-slate-800'>Hi Mike,</h1>
                 <p className='font-medium font-sans text-slate-700 text-xs'>welcome back.</p>
             </div>
         </div>
