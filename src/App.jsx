@@ -1,46 +1,31 @@
-import React, { useState } from 'react'
+import React from 'react'
 import HomePage from './component/HomePage'
 import HeroSection from './component/HeroSection'
-import BarChartPage from './component/BarChartPage'
-import { UserData } from './component/Constant'
 import SideBar from './component/SideBar'
+import Compare from './component/Compare'
 
 
 const App = () => {
 
-  const [userData, setUserData] = useState({
-    labels: UserData.map((data) => data.year),
-    datasets: [
-      {
-        label: '',
-        data: UserData.map((data) => data.userGain),
-        backgroundColor: ['#0800A3'],
-        barThickness: 12,
-      },
-      {
-        label: '',
-        data: UserData.map((data) => data.userGain),
-        backgroundColor: ['#4935FF'],
-        barThickness: 12,
-      },
-      {
-        label: '',
-        data: UserData.map((data) => data.userGain),
-        backgroundColor: ['#85AFFF'],
-        barThickness: 12,
-      },
-    ],
-  });
-
   return (
-    <div>
-      < HomePage />
+    <>
+      <div className='lg:flex lg:justify-around'>
+        <div>
+          < HomePage />
+        </div>
 
-      <HeroSection />
-      <BarChartPage charData={userData} />
+        <div className='lg:grow'>
+          <HeroSection />
+          <Compare />
+        </div>
 
-      <SideBar/>
-    </div >
+        <div>
+          <SideBar />
+        </div>
+      </div>
+
+
+    </ >
   )
 }
 

@@ -37,7 +37,7 @@ const BarChartPage = ({ charData }) => {
   };
 
   return (
-    <div className='w-[310px] mt-6 pl-7 mb-20'>
+    <div className='w-[310px] mt-6 pl-7 mb-20 lg:mb-10 lg:w-full lg:h-[210px] lg:flex lg:justify-center'>
       <Bar data={charData} options={options} />
     </div>
   );
