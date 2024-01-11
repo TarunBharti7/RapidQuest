@@ -14,7 +14,7 @@ const CircleRating =({ rating , value }) => {
           textColor: 'black',
         })}
       />
-      <p className='text-black font-extrabold z-40 text-center mt-[-48px]'>{rating}<sup>%</sup></p>
+      <p className='text-black font-extrabold z-20 text-center mt-[-48px]'>{rating}<sup>%</sup></p>
       <p className='my-7 text-center'>{value}</p>
     </div>
   );

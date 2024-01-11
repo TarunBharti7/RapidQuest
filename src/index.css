@@ -27,3 +27,7 @@
     font-weight: 700;
     fill: black;
 }
+
+.active {
+    display: none;
+}

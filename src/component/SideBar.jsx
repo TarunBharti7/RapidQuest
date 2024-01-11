@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import { RxCross1 } from "react-icons/rx";
 
-const SideBar = () => {
+const SideBar = ({ setDisplayFun }) => {
+    
     const [percentage, setPercentage] = useState(12);
     const [age, setAge] = useState(65)
+
     return (
         <div className='mb-14 lg:mt-4 lg:rounded-xl lg:pr-12 lg:ml-4'>
-            {/* <RxCross1 className='fixed top-7 right-7 text-3xl'/> */}
+            <RxCross1 className='fixed top-7 right-7 text-2xl lg:hidden'
+                onClick={setDisplayFun}
+            />
 
 
 

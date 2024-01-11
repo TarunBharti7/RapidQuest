@@ -1,21 +1,27 @@
-import React from 'react'
+import React  from 'react'
 import Navbar from './Navbar'
 import { CiBellOn } from "react-icons/ci";
 import { WiDegrees } from "react-icons/wi";
 import { RiLogoutBoxRLine } from "react-icons/ri";
 
-const HomePage = () => {
+const HomePage = ({ setDisplayFun }) => {
+
+
     return (
         <div className="relative lg:bg-slate-50 lg:flex lg:pr-4">
             <div className="fixed bottom-0 left-0 right-0 bg-white lg:relative">
                 <Navbar />
             </div>
+
             {/* Bell icon */}
-            <div className="fixed top-7 right-7 text-3xl  lg:fixed lg:left-3 lg:bottom-24 lg:top-auto text-gray-500">
-                <CiBellOn />
+            <div 
+                className="fixed top-7 right-7 text-3xl  lg:fixed lg:left-3 lg:bottom-24 lg:top-auto text-gray-500"
+            >
+                <CiBellOn onClick={setDisplayFun}/>
             </div>
+
             <div className="fixed top-3 right-2 text-5xl text-sky-700 lg:fixed lg:left-3 lg:bottom-24 lg:top-auto">
-                <WiDegrees />
+                <WiDegrees onClick={setDisplayFun}/>
             </div>
 
             {/* hidden element in mobile */}
